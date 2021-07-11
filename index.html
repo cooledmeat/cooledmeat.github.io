@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <htm lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <link rel="stylesheet" href="">
-        <title id="clock">00:00:00</title>
-    </head>
-    <body>
-        <h1 id="clock">00:00:00</h1>
-        <p>I'm hosted with GitHub Pages.</p>
-    </body>
-    <script src="momentum/js/clock.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/momentumCss.css" />
+    <title id="titleClock">00:00:00</title>
+  </head>
+  <body>
+    <h1 id="clock">00:00:00</h1>
+    <form class="hidden" id="loginForm">
+      <input
+        required
+        maxlength="20"
+        type="text"
+        placeholder="What is your name?"
+      />
+    </form>
+    <h1 class="hidden" id="greeting"></h1>
+  </body>
+  <script>
+    function press(f) {
+      if (f.keyCode === 13) {
+        loginForm.submit();
+      }
+    }
+  </script>
+  <script src="momentum/js/clock.js"></script>
+  <script src="momentum/js/backgroundImg.js"></script>
+  <script src="momentum/js/login.js"></script>
 </htm>
