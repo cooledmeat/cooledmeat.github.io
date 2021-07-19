@@ -6,16 +6,22 @@
     <title id="titleClock">00:00:00</title>
   </head>
   <body>
-    <h1 id="clock">00:00:00</h1>
-    <form class="hidden" id="loginForm">
-      <input
-        required
-        maxlength="20"
-        type="text"
-        placeholder="What is your name?"
-      />
-    </form>
-    <h1 class="hidden" id="greeting"></h1>
+    <div class="backgroundImg"></div>
+    <div class="bodyForm">
+      <h1 id="clock">00:00:00</h1>
+      <form class="hidden" id="loginForm">
+        <input
+          required
+          maxlength="20"
+          type="text"
+          placeholder="What is your name?"
+        />
+      </form>
+      <h1 class="hidden" id="greeting"></h1>
+      <form id="todoForm">
+        <input type="text" id="" placeholder="To Do" required />
+      </form>
+    </div>
   </body>
   <script>
     function press(f) {
